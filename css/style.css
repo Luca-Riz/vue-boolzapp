@@ -12,11 +12,36 @@
 .bgr {
     width: 100%; 
     height: 100vh;
+    position: relative;
+    z-index: -1;
 }
 
+/* classi per colore background */
 .bgr .top {width: 100%; height: 20vh;
     background-color: #009688;
 }
 .bgr .bottom {width: 100%; height: 80vh;
     background-color: #d7dbd7;
 }
+/* fine classi per colore background */
+
+/* inizio main container */
+main.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 990px;
+    width: 100%;
+    height: 95vh;
+    background-color: grey;
+}
+
+/* inizio colonna di sinistra */
+
+/* fine colonna di sinistra */
+
+/* inizio colonna di destra */
+
+/* fine colonna di destra */
+/* fine main container */
