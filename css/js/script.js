@@ -1,5 +1,5 @@
-const app = new VTTCue(
-    {
-        el: #'app',
-    }
-)
+// const app = new VTTCue(
+//     {
+//         el: #'app',
+//     }
+// )

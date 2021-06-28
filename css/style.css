@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    width: 100%; 
+    height: 100vh;
+}
+
+.bgr {
+    width: 100%; 
+    height: 100vh;
+}
+
+.bgr .top {width: 100%; height: 20vh;
+    background-color: #009688;
+}
+.bgr .bottom {width: 100%; height: 80vh;
+    background-color: #d7dbd7;
+}
