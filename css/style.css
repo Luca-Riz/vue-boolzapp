@@ -31,8 +31,8 @@ main.container {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 990px;
-    width: 100%;
+    min-width: 990px;
+    width: 90%;
     height: 95vh;
     background-color: #eaeaea;
     display: flex;
@@ -49,9 +49,20 @@ main.container header {
 
 /* inizio colonna di sinistra */
 .cln_left {
-    width: 40%;
+    width: 400px;
     height: 100%;
     border: 1px solid red; /*!togliere */
+}
+
+.cln_left header .left { 
+    display: flex;
+    align-items: center;
+}
+
+.cln_left header .left img {
+    height: 80px;
+    border-radius: 50%;
+
 }
 
 .cln_left .notification {
@@ -77,7 +88,7 @@ main.container header {
 
 /* inizio colonna di destra */
 .cln_right {
-    width: 60%;
+    width: calc(100% - 400px); /* - larghezza colonna di sinistra*/
     height: 100%;
     border: 1px solid blue; /*!togliere */
 }
