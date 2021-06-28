@@ -42,11 +42,20 @@
 .boolz_grey {color: #b1b1b1;}
 
 .boolz_grey i {
-    font-size: 1.5rem;
     margin: 5px;
+    font-size: 1.5rem;
 }
 
 .pr-10 {padding-right: 1rem;}
+.px-10 {
+    padding-left:  1rem;
+    padding-right: 1rem;
+}
+
+.mx-10 {
+    margin-left:  1rem;
+    margin-right: 1rem;
+}   
 
 .grey {color: grey;}
 
@@ -85,6 +94,8 @@ main.container header {
 }
 
 /* inizio colonna di sinistra */
+
+/* inizio header colonna sinistra */
 .cln_left {
     width: 400px; /*? in base a questa larghezza, sistemare calc della colonna di destra */
     height: 100%;
@@ -101,7 +112,9 @@ main.container header {
     justify-content: flex-end;
     align-items: center;
 }
+/* fine header colonna sinistra */
 
+/* inizio notification */
 .cln_left .notification {
     width: 100%;
     height: 80px;
@@ -125,17 +138,34 @@ main.container header {
     font-size: 1.5rem;
     color: #8edafc
 }
+/* fine notification */
 
+/* inizio search */
 .cln_left .search {
     width: 100%;
     height: 60px;
 }
 
+.cln_left .search .bgr_white {
+    background-color: white;
+    margin: 10px;
+    height: 3rem;
+}
+
+.cln_left .search input {
+    width: 90%;
+    border: none;
+    color: grey;
+}
+/* fine search */
+
+/* inizio contacts */
 .cln_left .contacts {
     width: 100%;
     height: calc(100% - 220px);  /** 80-80-60 */
     overflow-y: auto;
 }
+/* fine contacts */
 
 /* fine colonna di sinistra */
 
