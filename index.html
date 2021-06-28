@@ -69,13 +69,13 @@
                 <!-- fine search sinistra -->
 
                 <!-- inizio contacts sinistra -->
-                <div class="contacts">
+                <div class="contatti">
 
                     <!-- inizio contatto -->
                     <div class="contact flex_align_start ">
                         <img src="img/avatar_2.jpg" alt="#" class="avatar">
-                        <div v-for="name in contacts">
-                            {{name}}
+                        <div v-for="(item, index) in contacts">
+                            {{ index }} - {{ name }}:
                         </div>
                     </div>
                     <!-- fine contatto -->
@@ -116,13 +116,34 @@
 
                 <!-- inizio main destro -->
                 <main>
-                    <div>
-                        <div>
-                            <div class="text">Hai portato a spasso il cane?</div>
-                            <div class="status"></div>
+                    <!-- inizio messaggio -->
+                    <div class="containerMessage received">
+                        <div class="message">
+                            <div class="middle">
+                                <div class="text">Hai portato a spasso il cane?</div>
+                            </div>
+                            <div class="status">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="date bottom">data</div>
                         </div>
-                        <div class="date"></div>
                     </div>
+                    <!-- fine messaggio -->
+                    
+                    <!-- inizio messaggio -->
+                    <div class="containerMessage sent">
+                        <div class="message">
+                            <div class="middle">
+                                <div class="text">Hai portato a spasso il cane? fatto la spesa e preparato la tavola come ti avevo detto?</div>
+                            </div>
+                            <div class="status">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="date bottom">17/06/1983</div>
+                        </div>
+                    </div>
+                    <!-- fine messaggio -->
+
 
                 </main>
                 <!-- fine main destro -->

@@ -164,26 +164,26 @@ main.container header {
 }
 /* fine search */
 
-/* inizio contacts */
-.cln_left .contacts {
+/* inizio contatti */
+.cln_left .contatti {
     width: 100%;
     height: calc(100% - 220px);  /** 80-80-60 */
     overflow-y: auto;
     background-color: white;
 }
 
-.contacts .contact:not(:last-child) {
+.contatti .contact:not(:last-child) {
     border-bottom: 1px solid #b1b1b1;
 }
 
-.contacts .contact img {
+.contatti .contact img {
     margin-left: 1.5rem;
 }
 
-.contacts .contact .name {
+.contatti .contact .name {
     margin: 1rem;
 }
-/* fine contacts */
+/* fine contatti */
 
 /* fine colonna di sinistra */
 
@@ -193,6 +193,7 @@ main.container header {
     height: 100%;
 }
 
+/* inizio main */
 .cln_right main {
     width: 100%;
     height: calc(100% - 160px); /*? - top e bottom */
@@ -206,6 +207,64 @@ main.container header {
     align-items: center;
     height: 100%;
 }
+
+.cln_right main .containerMessage {
+    width: calc(100% - 200px);
+    display: flex;
+    margin: 20px 100px;
+    /* border: 1px solid black; */
+}
+
+.cln_right main .message {
+    position: relative;
+}
+
+.cln_right main .message .status{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+
+.cln_right main .message .bottom{
+    text-align: right;
+}
+
+.cln_right main .received {
+    justify-content: right;
+}
+
+.cln_right main .received .message {
+    background-color: #d5f8ba;
+}
+
+.cln_right main .sent{
+    justify-content: left;
+}
+
+.cln_right main .sent .message{
+    background-color: white;
+}
+
+.cln_right main .message {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-radius: 10px;
+}
+
+.cln_right main .message .date,
+.cln_right main .message .status {
+    color: grey;
+}
+
+.cln_right main .message .middle .status {
+    color: grey;
+    
+}
+
+/* fine main */
 
 .cln_right footer {
     width: 100%;
