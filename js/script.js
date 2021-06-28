@@ -50,5 +50,5 @@ const app = new VTTCue(
                 },
             ]
         },
-        methods: 
+        // methods: 
 )

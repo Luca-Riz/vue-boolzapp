@@ -130,13 +130,13 @@ main.container header {
     margin: 0 1rem;
 }
 
-.white .fa-bell-slash {
+.white .fas.fa-bell-slash {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.5rem;
-    color: #8edafc
+    color: #8edafc;
 }
 /* fine notification */
 
