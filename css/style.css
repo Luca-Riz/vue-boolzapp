@@ -13,7 +13,7 @@
     width: 100%; 
     height: 100vh;
     position: relative;
-    z-index: -1;
+    z-index: -2; /*? sotto a tutto */
 }
 
 /* classi per colore background */
@@ -36,6 +36,7 @@ main.container {
     height: 95vh;
     background-color: #eaeaea;
     display: flex;
+    z-index: -1; /*? appena sopra il bgr (riga 16) */
 }
 
 /** attenzione classe comune per entrambe le colonne */
@@ -85,13 +86,12 @@ main.container header {
     width: 100%;
     height: calc(100% - 200px);
     overflow-y: auto;
-    background-color: orange;  /*!togliere */
+    background-image: url(../img/mine.jpg);
 }
 
 .cln_right footer {
     width: 100%;
     height: 100px;
-    background-color: lavender;  /*!togliere */
 }
 /* fine colonna di destra */
 /* fine main container */
