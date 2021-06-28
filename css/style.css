@@ -144,18 +144,23 @@ main.container header {
 .cln_left .search {
     width: 100%;
     height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cln_left .search .bgr_white {
+    width: calc(100% - 20px);
     background-color: white;
-    margin: 10px;
-    height: 3rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
 }
 
 .cln_left .search input {
     width: 90%;
     border: none;
-    color: grey;
+    color: #b1b1b1;
 }
 /* fine search */
 
@@ -164,6 +169,19 @@ main.container header {
     width: 100%;
     height: calc(100% - 220px);  /** 80-80-60 */
     overflow-y: auto;
+    background-color: white;
+}
+
+.contacts .contact:not(:last-child) {
+    border-bottom: 1px solid #b1b1b1;
+}
+
+.contacts .contact img {
+    margin-left: 1.5rem;
+}
+
+.contacts .contact .name {
+    margin: 1rem;
 }
 /* fine contacts */
 
@@ -177,19 +195,9 @@ main.container header {
 
 .cln_right main {
     width: 100%;
-    height: calc(100% - 200px);
+    height: calc(100% - 160px); /*? - top e bottom */
     overflow-y: auto;
     background-image: url(../img/mine.jpg);
-}
-
-.cln_right footer {
-    width: 100%;
-    height: 100px;
-}
-
-.cln_right footer {
-    display: flex;
-    align-items: center;
 }
 
 .cln_right header .top {
@@ -198,6 +206,31 @@ main.container header {
     align-items: center;
     height: 100%;
 }
+
+.cln_right footer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cln_right footer i {
+    font-size: 2rem;
+    margin: 0 2rem;
+    color: grey;
+}
+
+.cln_right footer input {
+    height: 80%;
+    width: 100%;
+    border-color: #0060df;
+    border-radius: 10px;
+    padding-left: 1rem;
+}
+
+
+
 
 /* fine colonna di destra */
 /* fine main container */
