@@ -39,14 +39,18 @@
     justify-content: space-between;
 }
 
-.boolz_grey {
-    color: #b1b1b1;
-}
+.boolz_grey {color: #b1b1b1;}
 
 .boolz_grey i {
     font-size: 1.5rem;
     margin: 5px;
 }
+
+.pr-10 {padding-right: 1rem;}
+
+.grey {color: grey;}
+
+.underline {text-decoration: underline;}
 
 /** fine common */
 
@@ -76,13 +80,13 @@ main.container {
 /** attenzione classe comune per entrambe le colonne */
 main.container header {
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: #eaeaea;
 }
 
 /* inizio colonna di sinistra */
 .cln_left {
-    width: 350px; /*? in base a questa larghezza, sistemare calc della colonna di destra */
+    width: 400px; /*? in base a questa larghezza, sistemare calc della colonna di destra */
     height: 100%;
     border-right: 1px solid #b1b1b1;
 }
@@ -100,18 +104,36 @@ main.container header {
 
 .cln_left .notification {
     width: 100%;
-    height: 120px;
+    height: 80px;
     background-color: #8edafc;
+}
+
+.white {
+    position: relative;
+    background-color: white;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+
+.white .fa-bell-slash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: #8edafc
 }
 
 .cln_left .search {
     width: 100%;
-    height: 80px;
+    height: 60px;
 }
 
 .cln_left .contacts {
     width: 100%;
-    height: calc(100% - 300px); 
+    height: calc(100% - 220px);  /** 80-80-60 */
     overflow-y: auto;
 }
 
@@ -119,7 +141,7 @@ main.container header {
 
 /* inizio colonna di destra */
 .cln_right {
-    width: calc(100% - 350px); /*? - larghezza colonna di sinistra*/
+    width: calc(100% - 400px); /*? - larghezza colonna di sinistra*/
     height: 100%;
 }
 
@@ -139,5 +161,13 @@ main.container header {
     display: flex;
     align-items: center;
 }
+
+.cln_right header .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
 /* fine colonna di destra */
 /* fine main container */
