@@ -17,10 +17,10 @@
 }
 
 /* classi per colore background */
-.bgr .top {width: 100%; height: 20vh;
+.bgr .top {width: 100%; height: 15vh;
     background-color: #009688;
 }
-.bgr .bottom {width: 100%; height: 80vh;
+.bgr .bottom {width: 100%; height: 85vh;
     background-color: #d7dbd7;
 }
 /* fine classi per colore background */
@@ -34,14 +34,50 @@ main.container {
     max-width: 990px;
     width: 100%;
     height: 95vh;
-    background-color: grey;
+    background-color: #eaeaea;
+    display: flex;
+}
+
+main.container header {
+    width: 100%;
+    height: 100px;
+    background-color: #eaeaea;
+     border: 1px solid green; /*!togliere*/
 }
 
 /* inizio colonna di sinistra */
+.cln_left {
+    width: 40%;
+    height: 100%;
+    border: 1px solid red; /*!togliere */
+}
+
+.cln_left .notification {
+    width: 100%;
+    height: 120px;
+    background-color: #8edafc;
+}
+
+.cln_left .search {
+    width: 100%;
+    height: 80px;
+    border: 1px solid greenyellow; /*!togliere */
+}
+
+.cln_left .contacts {
+    width: 100%;
+    height: calc(100% - 300px);
+    overflow-y: auto;
+    background-color: indigo; /*!togliere */
+}
 
 /* fine colonna di sinistra */
 
 /* inizio colonna di destra */
-
+.cln_right {
+    width: 60%;
+    height: 100%;
+    border: 1px solid blue; /*!togliere */
+}
 /* fine colonna di destra */
 /* fine main container */
