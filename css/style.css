@@ -16,6 +16,40 @@
     z-index: -2; /*? sotto a tutto */
 }
 
+/** inizio common */
+
+.avatar {
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.flex_align_center { 
+    display: flex;
+    align-items: center;
+}
+
+.flex_align_start { 
+    display: flex;
+    align-items: flex-start;
+}
+
+.flex_between { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.boolz_grey {
+    color: #b1b1b1;
+}
+
+.boolz_grey i {
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+/** fine common */
+
 /* classi per colore background */
 .bgr .top {width: 100%; height: 15vh;
     background-color: #009688;
@@ -44,14 +78,13 @@ main.container header {
     width: 100%;
     height: 100px;
     background-color: #eaeaea;
-     border: 1px solid green; /*!togliere*/
 }
 
 /* inizio colonna di sinistra */
 .cln_left {
-    width: 400px;
+    width: 350px; /*? in base a questa larghezza, sistemare calc della colonna di destra */
     height: 100%;
-    border: 1px solid red; /*!togliere */
+    border-right: 1px solid #b1b1b1;
 }
 
 .cln_left header {
@@ -59,26 +92,10 @@ main.container header {
     justify-content: space-between;
 }
 
-.cln_left header .left { 
-    display: flex;
-    align-items: center;
-}
-
-.cln_left header .left img {
-    height: 80px;
-    border-radius: 50%;
-    margin: 10px;
-}
-
 .cln_left header .right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-
-.cln_left header .right i {
-    margin: 5px;
-    color: #b1b1b1;
 }
 
 .cln_left .notification {
@@ -90,23 +107,20 @@ main.container header {
 .cln_left .search {
     width: 100%;
     height: 80px;
-    border: 1px solid greenyellow; /*!togliere */
 }
 
 .cln_left .contacts {
     width: 100%;
-    height: calc(100% - 300px);
+    height: calc(100% - 300px); 
     overflow-y: auto;
-    background-color: indigo; /*!togliere */
 }
 
 /* fine colonna di sinistra */
 
 /* inizio colonna di destra */
 .cln_right {
-    width: calc(100% - 400px); /* - larghezza colonna di sinistra*/
+    width: calc(100% - 350px); /*? - larghezza colonna di sinistra*/
     height: 100%;
-    border: 1px solid blue; /*!togliere */
 }
 
 .cln_right main {
@@ -119,6 +133,11 @@ main.container header {
 .cln_right footer {
     width: 100%;
     height: 100px;
+}
+
+.cln_right footer {
+    display: flex;
+    align-items: center;
 }
 /* fine colonna di destra */
 /* fine main container */
