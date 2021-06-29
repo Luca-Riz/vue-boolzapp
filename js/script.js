@@ -214,7 +214,6 @@ const app = new Vue(
                     avatar: '_7',
                     visible: true,
                     messages: [
-
                     ],
                 },
             ],
