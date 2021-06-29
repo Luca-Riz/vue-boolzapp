@@ -35,7 +35,7 @@
                 <!-- inizio header sinistra -->
                 <header class="user">                    
                     <div class="left flex_align_center">
-                        <img src="img/avatar_7.jpg" alt="avatar1" class="avatar">
+                        <img src="img/avatar_7.jpg" alt="avatart" class="avatar">
                         <div class="name">Nome Utente</div>
                     </div>
                     <div class="right boolz_grey">
@@ -118,23 +118,23 @@
                 <main>
 
                     <!-- inizio messaggio -->
-                    <div class="containerMessage sent">
+                    <div v-for="sms in contacts[0].messages" class="containerMessage" :class="sms.status">
                         <div class="message">
                             <div class="middle">
-                                <div class="text">Hai portato a spasso il cane?</div>
+                                <div class="text"> {{sms.text}} </div>
                                 <div class="status">
                                     <i class="fas fa-check"></i>
                                 </div>
                             </div>
                             <div class="date bottom">
-                                29/06/2021
+                                {{sms.date}}
                             </div>
                         </div>
                     </div>
                     <!-- fine messaggio -->
                     
                     <!-- inizio messaggio -->
-                    <div class="containerMessage received">
+                    <!-- <div class="containerMessage received">
                         <div class="message">
                             <div class="middle">
                                 <div class="text">Hai portato a spasso il cane? fatto la spesa e preparato la tavola come ti avevo detto?</div>
@@ -146,7 +146,7 @@
                                 29/06/2021
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- fine messaggio -->
 
 
