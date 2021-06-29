@@ -184,6 +184,10 @@ main.container header {
     background-color: white;
 }
 
+.cln_left .contatti .contact:hover {
+    background-color: #f2f2f2;
+}
+
 .contatti .contact:not(:last-child) {
     border-bottom: 1px solid #b1b1b1;
 }
