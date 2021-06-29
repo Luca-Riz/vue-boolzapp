@@ -162,6 +162,11 @@ main.container header {
     border: none;
     color: #b1b1b1;
 }
+
+.cln_left .search input:focus {
+    border: 1px solid #6fa5ed;
+}
+
 /* fine search */
 
 /* inizio contatti */
@@ -289,13 +294,14 @@ main.container header {
 .cln_right footer input {
     height: 80%;
     width: 100%;
-    border-color: #0060df;
+    border: 1px solid lightgrey;
     border-radius: 10px;
     padding-left: 1rem;
 }
 
-
-
+.cln_right footer input:focus {
+    border: 1px solid #6fa5ed;
+}
 
 /* fine colonna di destra */
 /* fine main container */
