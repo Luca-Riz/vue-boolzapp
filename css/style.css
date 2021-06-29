@@ -256,19 +256,19 @@ main.container header {
     margin-right: 10px;
 }
 
-.cln_right main .received {
+.cln_right main .sent {
     justify-content: right;
 }
 
-.cln_right main .received .message {
+.cln_right main .sent .message {
     background-color: #d5f8ba;
 }
 
-.cln_right main .sent{
+.cln_right main .received{
     justify-content: left;
 }
 
-.cln_right main .sent .message{
+.cln_right main .received .message{
     background-color: white;
 }
 

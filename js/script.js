@@ -142,6 +142,8 @@ const app = new Vue(
                     ],
                 },
             ],
+
+
         },
 
     }
