@@ -57,18 +57,18 @@ const app = new Vue(
                     visible: true,
                     messages: [
                         {
-                        date: '20/03/2020 16:30:00',
-                        text: 'Ciao come stai?',
+                        date: '20/04/2020 16:30:00',
+                        text: 'Ciao omo, come xea?',
                         status: 'sent'
                         },
                         {
-                        date: '20/03/2020 16:30:55',
-                        text: 'Bene grazie! Stasera ci vediamo?',
+                        date: '20/04/2020 16:30:55',
+                        text: 'Ben grassie! Stasera se vedemo?',
                         status: 'received'
                         },
                         {
-                        date: '20/03/2020 16:35:00',
-                        text: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                        date: '20/04/2020 16:35:00',
+                        text: 'Si, va ben',
                         status: 'sent'
                         }
                     ],
@@ -80,20 +80,50 @@ const app = new Vue(
                     visible: true,
                     messages: [
                         {
-                        date: '20/03/2020 16:30:00',
-                        text: 'Ciao come stai?',
+                        date: '21/06/2021 16:30:00',
+                        text: 'Ciao Marchetto, come stai? Stiamo facendo vuejs con Boolean',
                         status: 'sent'
                         },
                         {
-                        date: '20/03/2020 16:30:55',
-                        text: 'Bene grazie! Stasera ci vediamo?',
+                        date: '21/06/2021 16:30:55',
+                        text: 'Bomba Vue, poi mi dirai',
                         status: 'received'
                         },
                         {
-                        date: '20/03/2020 16:35:00',
-                        text: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                        date: '21/06/2021 16:35:00',
+                        text: 'Cosa hai fatto oggi?',
+                        status: 'received'
+                        },
+                        {
+                        date: '21/06/2021 16:36:00',
+                        text: 'Solo l\'introduzione, oggi pomeriggio studio slide e facciamo esercizi semplici',
                         status: 'sent'
-                        }
+                        },
+                        {
+                        date: '21/06/2021 16:37:00',
+                        text: 'Ok, poi se hai bisogno chiedimi',
+                        status: 'received'
+                        },
+                        {
+                        date: '21/06/2021 16:38:00',
+                        text: 'Grazie mille! Come vá col lavoro post Boolean? Non ti ho mai chiesto se ti piace! Com\'è l\'ambiente?!',
+                        status: 'sent'
+                        },
+                        {
+                        date: '21/06/2021 16:39:30',
+                        text: 'Una figata, tutto super ok',
+                        status: 'received'
+                        },
+                        {
+                        date: '21/06/2021 16:39:40',
+                        text: 'Lavoro una bomba, ambiente e colleghi una bomba',
+                        status: 'received'
+                        },
+                        {                        
+                        date: '21/06/2021 16:39:50',
+                        text: 'Si sta bene, quindi sono super contento',
+                        status: 'received'
+                        },
                     ],
                 },
 
@@ -103,20 +133,35 @@ const app = new Vue(
                     visible: true,
                     messages: [
                         {
-                        date: '20/03/2020 16:30:00',
-                        text: 'Ciao come stai?',
-                        status: 'sent'
-                        },
-                        {
-                        date: '20/03/2020 16:30:55',
-                        text: 'Bene grazie! Stasera ci vediamo?',
+                        date: '20/05/2021 16:30:00',
+                        text: 'Ciao Luca',
                         status: 'received'
                         },
                         {
-                        date: '20/03/2020 16:35:00',
-                        text: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                        date: '20/05/2021 16:30:55',
+                        text: 'nel css togli la riga 90  z-index: -1; /*? appena sopra il bgr (riga 16) */ :wink:',
+                        status: 'received'
+                        },
+                        {
+                        date: '20/05/2021 16:35:00',
+                        text: 'Pazzesco... Non sai quanto tempo ci ho perso... ',
                         status: 'sent'
-                        }
+                        },
+                        {
+                        date: '20/05/2021 16:35:30',
+                        text: 'Grazie',
+                        status: 'sent'
+                        },
+                        {
+                        date: '20/05/2021 16:36:30',
+                        text: 'Figurati!',
+                        status: 'received'
+                        },
+                        {
+                        date: '20/05/2021 16:37:30',
+                        text: 'adesso l\'importante che funziona',
+                        status: 'received'
+                        },
                     ],
                 },
 
@@ -126,19 +171,19 @@ const app = new Vue(
                     visible: true,
                     messages: [
                         {
-                        date: '20/03/2020 16:30:00',
-                        text: 'Ciao come stai?',
-                        status: 'sent'
-                        },
-                        {
-                        date: '20/03/2020 16:30:55',
-                        text: 'Bene grazie! Stasera ci vediamo?',
+                        date: '20/03/2021 12:30:00',
+                        text: 'Com\'è andata stamattina coi bimbi?',
                         status: 'received'
                         },
                         {
-                        date: '20/03/2020 16:35:00',
-                        text: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                        date: '20/03/2021 12:30:55',
+                        text: 'Bene dai! Mattia non voleva proprio entrare, ma con un cartone animato gli ho cambiato la giornata',
                         status: 'sent'
+                        },
+                        {
+                        date: '20/03/2021 13:35:00',
+                        text: 'Il solito viziatello',
+                        status: 'received'
                         }
                     ],
                 },
