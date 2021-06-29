@@ -87,7 +87,6 @@ main.container {
     height: 95vh;
     background-color: #eaeaea;
     display: flex;
-    z-index: -1; /*? appena sopra il bgr (riga 16) */
 }
 
 /** attenzione classe comune per entrambe le colonne */
@@ -167,9 +166,9 @@ main.container header {
     color: #b1b1b1;
 }
 
-.cln_left .search input:focus {
+/* .cln_left .search input:focus {
     border: 1px solid #6fa5ed;
-}
+} */
 
 /* fine search */
 
