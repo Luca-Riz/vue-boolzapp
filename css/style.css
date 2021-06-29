@@ -193,6 +193,13 @@ main.container header {
     height: 100%;
 }
 
+.cln_right header .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
 /* inizio main */
 .cln_right main {
     width: 100%;
@@ -201,32 +208,40 @@ main.container header {
     background-image: url(../img/mine.jpg);
 }
 
-.cln_right header .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
 .cln_right main .containerMessage {
-    width: calc(100% - 200px);
+    width: calc(100% - 200px); /*? - 100px per lato */
     display: flex;
     margin: 20px 100px;
-    /* border: 1px solid black; */
+    /*! border: 1px solid black; */
 }
 
 .cln_right main .message {
-    position: relative;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cln_right main .middle {
+    display: inline-block;
+    width: 100%;
+    height: calc(100% - 20px);
+}
+
+.cln_right main .message .text {
+    width: calc(100% - 30px);
+    display: inline-block;
 }
 
 .cln_right main .message .status{
-    position: absolute;
-    right: 10px;
-    bottom: 20px;
+    width: 20px;
+    display: inline-block;
+    text-align: right;
 }
 
-.cln_right main .message .bottom{
+.cln_right main .message .date {
+    font-size: 0.9rem;
     text-align: right;
+    margin-right: 10px;
 }
 
 .cln_right main .received {
@@ -243,15 +258,6 @@ main.container header {
 
 .cln_right main .sent .message{
     background-color: white;
-}
-
-.cln_right main .message {
-    width: 300px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
-    border-radius: 10px;
 }
 
 .cln_right main .message .date,
