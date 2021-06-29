@@ -3,6 +3,7 @@ const app = new Vue(
         el: '#app',
         data: {
             nomi: '',
+            active: '',
             contacts: [
                 {
                     name: 'Michele',
@@ -142,9 +143,12 @@ const app = new Vue(
                     ],
                 },
             ],
-
-
         },
-
+        methods: {
+            activeContact: function(index){
+                this.active = index;
+                console.log(index);
+            }
+        },
     }
 )
