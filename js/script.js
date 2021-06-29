@@ -139,7 +139,7 @@ const app = new Vue(
                         },
                         {
                         date: '20/05/2021 16:30:55',
-                        text: 'nel css togli la riga 90  z-index: -1; /*? appena sopra il bgr (riga 16) */ :wink:',
+                        text: 'nel css togli la riga 90  z-index: -1; /*? appena sopra il bgr (riga 16) */',
                         status: 'received'
                         },
                         {
@@ -185,6 +185,36 @@ const app = new Vue(
                         text: 'Il solito viziatello',
                         status: 'received'
                         }
+                    ],
+                },
+                {
+                    name: 'Cristina',
+                    avatar: '_6',
+                    visible: true,
+                    messages: [
+                        {
+                        date: '28/06/2021 10:30:00',
+                        text: 'Come va con l\'esercizio Luca?',
+                        status: 'received'
+                        },
+                        {
+                        date: '28/06/2021 10:31:00',
+                        text: 'Speravo meglio, ieri ho fatto un paio di stupidaggini che mi hanno portato via ore, la più ridicola è stata "const app = new Vue", al posto di Vue avevo messo quello che suggerisce vs code... ore...',
+                        status: 'sent'
+                        },
+                        {
+                        date: '28/06/2021 10:32:53',
+                        text: 'Non ti preoccupare, anche queste cose servono, l\'importante è risolvere',
+                        status: 'received'
+                        }    
+                    ],
+                },
+                {
+                    name: 'Luca',
+                    avatar: '_7',
+                    visible: true,
+                    messages: [
+
                     ],
                 },
             ],
