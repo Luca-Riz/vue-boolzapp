@@ -18,6 +18,10 @@
 
 /** inizio common */
 
+.pointer {
+    cursor: pointer;
+}
+
 .avatar {
     height: 60px;
     border-radius: 50%;

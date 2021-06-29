@@ -1,6 +1,6 @@
-const app = new VTTCue(
+const app = new Vue(
     {
-        el: #'app',
+        el: '#app',
         data: {
             nomi: '',
             contacts: [
@@ -49,11 +49,9 @@ const app = new VTTCue(
                         }
                     ],
                 },
-            ]
+            ],
+            iName: 0
         },
-        methods: {
-            addName: function() {
-                
-            }
-        }
+
+    }
 )

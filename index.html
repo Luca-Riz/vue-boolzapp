@@ -72,16 +72,14 @@
                 <div class="contatti">
 
                     <!-- inizio contatto -->
-                    <div class="contact flex_align_start ">
-                        <img src="img/avatar_2.jpg" alt="#" class="avatar">
-                        <div v-for="(item, index) in contacts">
-                            {{ index }} - {{ name }}:
+                    <div class="contact flex_align_start pointer" v-for="item in contacts">
+                        <img :src="'img/avatar'+ item.avatar +'.jpg'" alt="#" class="avatar">
+                        <div>
+                            {{item.name}}
                         </div>
                     </div>
                     <!-- fine contatto -->
-
-
-
+                    
 
                 </div>
                 <!-- fine contacts sinistra -->
