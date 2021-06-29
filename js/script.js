@@ -3,11 +3,11 @@ const app = new Vue(
         el: '#app',
         data: {
             nomi: '',
-            active: '',
+            active: 0,
             contacts: [
                 {
                     name: 'Michele',
-                    avatar: '_1',
+                    avatar: '_0',
                     visible: true,
                     messages: [
                         {
@@ -30,7 +30,7 @@ const app = new Vue(
 
                 {
                     name: 'Fabio',
-                    avatar: '_2',
+                    avatar: '_1',
                     visible: true,
                     messages: [
                         {
@@ -53,7 +53,7 @@ const app = new Vue(
 
                 {
                     name: 'Matteo',
-                    avatar: '_3',
+                    avatar: '_2',
                     visible: true,
                     messages: [
                         {
@@ -76,7 +76,7 @@ const app = new Vue(
 
                 {
                     name: 'Marco',
-                    avatar: '_4',
+                    avatar: '_3',
                     visible: true,
                     messages: [
                         {
@@ -99,7 +99,7 @@ const app = new Vue(
 
                 {
                     name: 'Filippo',
-                    avatar: '_5',
+                    avatar: '_4',
                     visible: true,
                     messages: [
                         {
@@ -122,7 +122,7 @@ const app = new Vue(
 
                 {
                     name: 'Lisa',
-                    avatar: '_6',
+                    avatar: '_5',
                     visible: true,
                     messages: [
                         {
