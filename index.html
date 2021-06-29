@@ -72,9 +72,10 @@
                 <div class="contatti">
 
                     <!-- inizio contatto -->
-                    <div class="contact flex_align_start pointer" v-for="item in contacts">
+                    <!-- todo "bgr_boolz_grey classe da mettere solo al contatto attivo" -->
+                    <div class="contact flex_align_start pointer bgr_boolz_grey"  v-for="item in contacts">
                         <img :src="'img/avatar'+ item.avatar +'.jpg'" alt="#" class="avatar">
-                        <div>
+                        <div class="name">
                             {{item.name}}
                         </div>
                     </div>
@@ -93,8 +94,9 @@
                 <header>
 
                     <div class="top">
-                        <div class="left flex_align_center">
-                            <img src="img/avatar_2.jpg" alt="#" class="avatar">
+                        <!-- todo da sistemare per far vedere solo contatto attivo -->
+                        <div class="left flex_align_center" v-for="item in contacts">
+                            <img :src="'img/avatar'+ item.avatar + '.jpg'" alt="#" class="avatar">
                             <div>
                                 <div class="name">Michele</div>
                                 <div class="grey">Ultimo accesso oggi alle</div>
