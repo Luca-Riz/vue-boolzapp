@@ -4,6 +4,7 @@ const app = new Vue(
         data: {
             nomi: '',
             active: 0,
+            sendSms: '',
             contacts: [
                 {
                     name: 'Michele',
@@ -221,7 +222,12 @@ const app = new Vue(
         methods: {
             activeContact: function(index){
                 this.active = index;
-                console.log(index);
+                // console.log(index);
+            },
+
+            sendMessage: function(testo){
+                this.sendSms = testo;
+                // console.log(testo);
             }
         },
     }
