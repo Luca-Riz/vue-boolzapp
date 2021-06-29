@@ -143,7 +143,7 @@ main.container header {
 }
 /* fine notification */
 
-/* inizio search */
+/* inizio search sinistra*/
 .cln_left .search {
     width: 100%;
     height: 60px;
@@ -162,15 +162,17 @@ main.container header {
 
 .cln_left .search input {
     width: 90%;
+    height: 100%;
     border: none;
     color: #b1b1b1;
+    padding-left: 10px;
 }
 
 /* .cln_left .search input:focus {
     border: 1px solid #6fa5ed;
 } */
 
-/* fine search */
+/* fine search sinistra */
 
 /* inizio contatti */
 .cln_left .contatti {
