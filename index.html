@@ -73,7 +73,7 @@
 
                     <!-- inizio contatto -->
                     <!-- todo "bgr_boolz_grey classe da mettere solo al contatto attivo" -->
-                    <div class="contact flex_align_start pointer" v-for="(item,i) in contacts" @click="activeContact(i)">
+                    <div class="contact flex_align_start pointer" v-for="(item,i) in contacts" @click="activeContact(i)" :class="(active == i) ? 'bgr_boolz_grey' : ''">
                         <img :src="'img/avatar'+ item.avatar +'.jpg'" alt="#" class="avatar">
                         <div class="name">
                             {{item.name}}
