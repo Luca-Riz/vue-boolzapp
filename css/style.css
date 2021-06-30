@@ -68,6 +68,7 @@
 .underline {text-decoration: underline;}
 
 .none{display: none}
+.block{display: block;}
 
 /** fine common */
 
@@ -287,6 +288,9 @@ main.container header {
     color: grey;
     
 }
+
+.fas.fa-angle-down {display: none;}
+.message:hover .fas.fa-angle-down {display: block;}
 
 /* fine main */
 
