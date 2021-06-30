@@ -225,6 +225,19 @@ const app = new Vue(
                 // console.log(index);
             },
 
+            answer: function(){
+                let now = dayjs(); //* usando dayjs */
+                let date = now.format("DD/MM/YYYY");
+                let time = now.format("HH:mm:ss");
+                let nowDate = date + ' ' + time;
+                
+                this.contacts[this.active].messages.push({
+                    date: nowDate,
+                    text: 'ok',
+                    status: 'received',
+                });
+            },
+
             sendMessage: function(testo){
                 this.sendSms = testo;
                 this.sendSms = '';
@@ -239,10 +252,11 @@ const app = new Vue(
                     text: testo,
                     status: 'sent',
                 });
-                // console.log(this.contacts[this.active].messages);
+                // console.log(this.contacts[this.active].messages);  
 
-                //todo setTimeout(function(){ alert("Hello"); }, 1000);
-            }
+                setTimeout(this.answer, 1000);
+            },
         },
+
     }
 )
