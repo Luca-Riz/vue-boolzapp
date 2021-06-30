@@ -72,7 +72,7 @@ body {
 .underline {text-decoration: underline;}
 
 .none{display: none}
-.block{display: block;}
+.flex{display: flex !important;}
 
 /** fine common */
 
@@ -298,9 +298,10 @@ main.container header {
 .message:hover .fas.fa-angle-down {display: block;}
 
 /* menu a tendina messagio */
-.containerMessage .menu {
+.containerMessage .message .menu {
     position: absolute;
-    top: 25px;
+    z-index: 999;
+    top: 30px;
     right: 10px;
     width: 170px;
     height: 80px;
@@ -312,6 +313,7 @@ main.container header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 /* fine main */
