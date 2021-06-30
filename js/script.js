@@ -227,10 +227,9 @@ const app = new Vue(
 
             answer: function(){
                 //richiamo funzione per data e ora
-                this.actualDate(),
-                
+                                
                 this.contacts[this.active].messages.push({
-                    date: nowDate, 
+                    date: this.actualDate(),
                     text: 'ok',
                     status: 'received',
                 });
@@ -240,10 +239,9 @@ const app = new Vue(
                 this.sendSms = testo;
                 this.sendSms = '';
                 //richiamo funzione per data e ora
-                this.actualDate(),
 
                 this.contacts[this.active].messages.push({
-                    date: nowDate,
+                    date: this.actualDate(),
                     text: testo,
                     status: 'sent',
                 });
@@ -257,10 +255,8 @@ const app = new Vue(
                 let now = dayjs(); //* usando dayjs */
                 let date = now.format("DD/MM/YYYY");
                 let time = now.format("HH:mm:ss");
-                return nowDate = date + ' ' + time;
+                return date + ' ' + time;
             },
-
-
 
         },
 
