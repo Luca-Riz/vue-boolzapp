@@ -226,13 +226,11 @@ const app = new Vue(
             },
 
             answer: function(){
-                let now = dayjs(); //* usando dayjs */
-                let date = now.format("DD/MM/YYYY");
-                let time = now.format("HH:mm:ss");
-                let nowDate = date + ' ' + time;
+                //richiamo funzione per data e ora
+                this.actualDate(),
                 
                 this.contacts[this.active].messages.push({
-                    date: nowDate,
+                    date: nowDate, 
                     text: 'ok',
                     status: 'received',
                 });
@@ -241,11 +239,8 @@ const app = new Vue(
             sendMessage: function(testo){
                 this.sendSms = testo;
                 this.sendSms = '';
-                // console.log(testo);
-                let now = dayjs(); //* usando dayjs */
-                let date = now.format("DD/MM/YYYY");
-                let time = now.format("HH:mm:ss");
-                let nowDate = date + ' ' + time;
+                //richiamo funzione per data e ora
+                this.actualDate(),
 
                 this.contacts[this.active].messages.push({
                     date: nowDate,
@@ -256,6 +251,17 @@ const app = new Vue(
 
                 setTimeout(this.answer, 1000);
             },
+
+            //* funzione  per far comparire data e ora come voglio
+            actualDate(){
+                let now = dayjs(); //* usando dayjs */
+                let date = now.format("DD/MM/YYYY");
+                let time = now.format("HH:mm:ss");
+                return nowDate = date + ' ' + time;
+            },
+
+
+
         },
 
     }
