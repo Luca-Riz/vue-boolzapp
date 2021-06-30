@@ -231,10 +231,10 @@ main.container header {
     width: calc(100% - 200px); /*? - 100px per lato */
     display: flex;
     margin: 20px 100px;
-    /*! border: 1px solid black; */
 }
 
 .cln_right main .message {
+    position: relative;
     width: 300px;
     border-radius: 10px;
     padding: 10px;
@@ -289,8 +289,25 @@ main.container header {
     
 }
 
+/* freccia verso il basso del messaggio */
 .fas.fa-angle-down {display: none;}
 .message:hover .fas.fa-angle-down {display: block;}
+
+/* menu a tendina messagio */
+.containerMessage .menu {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    width: 150px;
+    height: 60px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 0px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* fine main */
 
