@@ -251,14 +251,32 @@ const app = new Vue(
                 setTimeout(this.answer, 1000);
             },
 
-            search: function(toFind){
-                console.log(toFind); //* search filed
-                this.contacts[this.active].visible = this.contacts[this.active].name.search(this.searchField);
-                console.log(this.contacts[this.active].visible);
+            search: function(){
+
+                this.contacts.forEach((element,index) => {
+                    
+                    console.log(app.searchField); //* search field
+                    // visible di default true = app.contacts[app.active].visible
+                    let vis = app.contacts[index].name.search(app.searchField);
+                    console.log(vis);
+    
+                    
+                    if(vis < 0){
+                        app.contacts[index].visible = false;
+                    } else {
+                        app.contacts[index].visible = true;
+                    }
+                    console.log(app.contacts[index].visible);
+                    console.log(app.contacts.visible);
+
+                });
+
 
             },
 
-            //* funzione  per far comparire data e ora come voglio
+
+
+            //? funzione  per far comparire data e ora come voglio
             actualDate(){
                 let now = dayjs(); //* usando dayjs */
                 let date = now.format("DD/MM/YYYY");
