@@ -226,15 +226,7 @@ const app = new Vue(
                 // console.log(index);
             },
 
-            answer: function(){
-                //richiamo funzione per data e ora
-                                
-                this.contacts[this.active].messages.push({
-                    date: this.actualDate(),
-                    text: 'ok',
-                    status: 'received',
-                });
-            },
+
 
             sendMessage: function(testo){
                 this.sendSms = testo;
@@ -251,24 +243,21 @@ const app = new Vue(
                 setTimeout(this.answer, 1000);
             },
 
+            //* funzione cerca sotto a nome utente
             search: function(){
 
-                this.contacts.forEach((element,index) => {
+                this.contacts.forEach((elem,index) => {                    
+                    //* 'app' per uscire da this e andare a vedere searchField
+                    // console.log('sF=' + app.searchField.toLowerCase());                     
+                    let vis = app.contacts[index].name.toLowerCase().search(app.searchField.toLowerCase());
+                    // console.log('vis=' + vis);    
                     
-                    console.log(app.searchField); //* search field
-                    // visible di default true = app.contacts[app.active].visible
-                    let vis = app.contacts[index].name.search(app.searchField);
-                    console.log(vis);
-    
-                    
-                    if(vis < 0){
+                    if(vis == -1){
                         app.contacts[index].visible = false;
                     } else {
                         app.contacts[index].visible = true;
                     }
-                    console.log(app.contacts[index].visible);
-                    console.log(app.contacts.visible);
-
+                    // console.log('visible= ' + app.contacts[index].visible);
                 });
 
 
@@ -282,6 +271,16 @@ const app = new Vue(
                 let date = now.format("DD/MM/YYYY");
                 let time = now.format("HH:mm:ss");
                 return date + ' ' + time;
+            },
+
+            //? funzione per risposta automatica all'invio di un messaggio
+            answer: function(){                
+                                
+                this.contacts[this.active].messages.push({
+                    date: this.actualDate(), //richiamo funzione per data e ora
+                    text: 'ok',
+                    status: 'received',
+                });
             },
 
         },
