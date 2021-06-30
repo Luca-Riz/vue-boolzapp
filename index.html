@@ -63,7 +63,7 @@
                 <div class="search">
                     <div class="bgr_white flex_align_center">
                         <i class="fas fa-search boolz_grey mx-10"></i>
-                        <input type="text" placeholder="Cerca o inizia una nuova chat">
+                        <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="searchField" v-on:keyup="search(searchField)">>
                     </div>
                 </div>
                 <!-- fine search sinistra -->

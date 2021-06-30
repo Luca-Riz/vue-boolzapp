@@ -5,6 +5,7 @@ const app = new Vue(
             nomi: '',
             active: 0,
             sendSms: '',
+            searchField: '',
             contacts: [
                 {
                     name: 'Michele',
@@ -248,6 +249,11 @@ const app = new Vue(
                 // console.log(this.contacts[this.active].messages);  
 
                 setTimeout(this.answer, 1000);
+            },
+
+            search: function(toFind){
+                console.log(toFind);
+                
             },
 
             //* funzione  per far comparire data e ora come voglio
