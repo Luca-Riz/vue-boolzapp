@@ -227,8 +227,9 @@ const app = new Vue(
 
             sendMessage: function(testo){
                 this.sendSms = testo;
+                this.sendSms = '';
                 // console.log(testo);
-                let now = dayjs();
+                let now = dayjs(); //* usando dayjs */
                 let date = now.format("DD/MM/YYYY");
                 let time = now.format("HH:mm:ss");
                 let nowDate = date + ' ' + time;
@@ -240,6 +241,7 @@ const app = new Vue(
                 });
                 // console.log(this.contacts[this.active].messages);
 
+                //todo setTimeout(function(){ alert("Hello"); }, 1000);
             }
         },
     }
