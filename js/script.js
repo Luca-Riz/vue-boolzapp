@@ -228,14 +228,17 @@ const app = new Vue(
             sendMessage: function(testo){
                 this.sendSms = testo;
                 // console.log(testo);
+                let now = dayjs();
+                let date = now.format("DD/MM/YYYY");
+                let time = now.format("HH:mm:ss");
+                let nowDate = date + ' ' + time;
 
-                // todo
                 this.contacts[this.active].messages.push({
-                    date: '28/06/2021 10:32:53',
+                    date: nowDate,
                     text: testo,
                     status: 'sent',
                 });
-                console.log(this.contacts[this.active].messages);
+                // console.log(this.contacts[this.active].messages);
 
             }
         },
