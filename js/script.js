@@ -252,8 +252,10 @@ const app = new Vue(
             },
 
             search: function(toFind){
-                console.log(toFind);
-                
+                console.log(toFind); //* search filed
+                this.contacts[this.active].visible = this.contacts[this.active].name.search(this.searchField);
+                console.log(this.contacts[this.active].visible);
+
             },
 
             //* funzione  per far comparire data e ora come voglio
