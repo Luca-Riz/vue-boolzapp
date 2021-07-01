@@ -233,14 +233,16 @@ const app = new Vue(
                 this.sendSms = '';
                 //richiamo funzione per data e ora
 
-                this.contacts[this.active].messages.push({
-                    date: this.actualDate(),
-                    text: testo,
-                    status: 'sent',
-                });
-                // console.log(this.contacts[this.active].messages);  
-
-                setTimeout(this.answer, 1000);
+                if(testo != ''){
+                    this.contacts[this.active].messages.push({
+                        date: this.actualDate(),
+                        text: testo,
+                        status: 'sent',
+                    });
+                    // console.log(this.contacts[this.active].messages);  
+    
+                    setTimeout(this.answer, 1000);
+                }
             },
 
             //* funzione cerca sotto a nome utente
@@ -257,7 +259,7 @@ const app = new Vue(
                     } else {
                         app.contacts[index].visible = true;
                     }
-                    // console.log('visible= ' + app.contacts[index].visible);
+                    //                                     console.log('visible= ' + app.contacts[index].visible);
                 });
 
 
