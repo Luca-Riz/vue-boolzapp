@@ -132,7 +132,7 @@
                             <div class="middle">
                                 <div class="text"> {{sms.text}} </div>
                                 <div class="status">
-                                    <i class="fas fa-angle-down"></i>
+                                    <i @click="menuMes" class="fas fa-angle-down"></i>
                                 </div>
                                 
                             </div>
@@ -140,7 +140,7 @@
                                 {{sms.date}}
                             </div>
                             <!--* menu a tendina -->
-                            <div class="menu">
+                            <div class="menu" :class="[(menuDel == true) ? 'flex' : '']">
                                 <div>Message info</div>
                                 <div>Delete message</div>
                             </div>

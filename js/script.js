@@ -6,6 +6,7 @@ const app = new Vue(
             active: 0,
             sendSms: '',
             searchField: '',
+            menuDel: false,
             contacts: [
                 {
                     name: 'Michele',
@@ -220,13 +221,12 @@ const app = new Vue(
                 },
             ],
         },
-        methods: {
+        methods: { 
+            //! arrow function?
             activeContact: function(index){
                 this.active = index;
                 // console.log(index);
             },
-
-
 
             sendMessage: function(testo){
                 this.sendSms = testo;
@@ -259,9 +259,19 @@ const app = new Vue(
                     } else {
                         app.contacts[index].visible = true;
                     }
-                    //                                     console.log('visible= ' + app.contacts[index].visible);
-                });
+                    //console.log('visible= ' + app.contacts[index].visible);
+                });               
+            },
 
+            // cambio il valore booleano di menuMes per far vedere menu a tendina
+            menuMes(){
+                if(this.menuDel == false){
+                    this.menuDel = true;
+                    console.log(menuDel);
+                } else {
+                    this.menuDel = false;
+                    console.log(menuDel);
+                }
 
             },
 
