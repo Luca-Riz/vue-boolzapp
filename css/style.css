@@ -204,8 +204,13 @@ main.container header {
 }
 
 .contatti .contact .name, .contatti .contact .grey {
-    margin: 1rem;
+    margin: 0.2rem;
 }
+
+.contatti .contact .nameDate {
+    display: flex;
+}
+
 /* fine contatti */
 
 /* fine colonna di sinistra */
