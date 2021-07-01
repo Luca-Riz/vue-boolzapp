@@ -6,7 +6,6 @@ const app = new Vue(
             active: 0,
             sendSms: '',
             searchField: '',
-            menuDel: false,
             contacts: [
                 {
                     name: 'Michele',
@@ -16,17 +15,20 @@ const app = new Vue(
                         {
                         date: '10/01/2020 15:30:55',
                         text: 'Hai portato a spasso il cane?',
-                        status: 'sent'
-                        },
-                        {
+                        status: 'sent',
+                        menuDel: false
+                    },
+                    {
                         date: '10/01/2020 15:50:00',
                         text: 'Ricordati di dargli da mangiare',
-                        status: 'sent'
-                        },
-                        {
+                        status: 'sent',
+                        menuDel: false
+                    },
+                    {
                         date: '10/01/2020 16:15:22',
                         text: 'Tutto fatto!',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         },
                     ],
                 },
@@ -264,18 +266,23 @@ const app = new Vue(
             },
 
             // cambio il valore booleano di menuMes per far vedere menu a tendina
-            menuMes(){
-                if(this.menuDel == false){
-                    this.menuDel = true;
-                    console.log(menuDel);
+            menuMes: function(ind){
+                let smsHere = this.contacts[this.active].messages[ind].menuDel;
+                if(smsHere == false){
+                    smsHere = true;
+                    console.log(smsHere);
+                    
                 } else {
-                    this.menuDel = false;
-                    console.log(menuDel);
+                    smsHere = false;
+                    console.log(smsHere);
                 }
-
+                this.contacts[this.active].messages[ind].menuDel = smsHere;
             },
 
-
+            deleteSms: function(ind){
+                let smsHere = this.contacts[this.active].messages;
+                smsHere.splice(ind, 1);
+            },
 
             //? funzione  per far comparire data e ora come voglio
             actualDate(){
@@ -294,6 +301,7 @@ const app = new Vue(
                     status: 'received',
                 });
             },
+
 
         },
 

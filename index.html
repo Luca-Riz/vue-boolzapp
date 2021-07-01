@@ -127,12 +127,12 @@
 
                     <!-- inizio messaggio -->
                     <!--* mostra tutti gli sms del contatto attivo -->
-                    <div v-for="sms in contacts[active].messages" class="containerMessage" :class="sms.status">
+                    <div v-for="(sms, ind) in contacts[active].messages" class="containerMessage" :class="sms.status">
                         <div class="message">
                             <div class="middle">
                                 <div class="text"> {{sms.text}} </div>
                                 <div class="status">
-                                    <i @click="menuMes" class="fas fa-angle-down"></i>
+                                    <i @click="menuMes(ind)" class="fas fa-angle-down"></i>
                                 </div>
                                 
                             </div>
@@ -140,9 +140,9 @@
                                 {{sms.date}}
                             </div>
                             <!--* menu a tendina -->
-                            <div class="menu" :class="[(menuDel == true) ? 'flex' : '']">
+                            <div class="menu" :class="(sms.menuDel == true) ? 'flex' : ''">
                                 <div>Message info</div>
-                                <div>Delete message</div>
+                                <div @click="deleteSms(ind)">Delete message</div>
                             </div>
                             <!--* fine menu a tendina -->
                         </div>
