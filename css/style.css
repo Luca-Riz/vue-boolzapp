@@ -203,7 +203,7 @@ main.container header {
     margin-left: 1.5rem;
 }
 
-.contatti .contact .name {
+.contatti .contact .name, .contatti .contact .grey {
     margin: 1rem;
 }
 /* fine contatti */

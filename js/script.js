@@ -305,8 +305,6 @@ const app = new Vue(
                     // console.log(smsHere);
                 }
                 this.contacts[this.active].messages[ind].menuDel = smsHere;
-                console.log(this.active);
-                console.log('ind' + ind);
             },
 
             deleteSms: function(ind){
