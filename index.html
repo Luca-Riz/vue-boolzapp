@@ -83,9 +83,9 @@
                         <div class="textInContact">
                             <div class="nameDate">
                                 <div class="name"> {{item.name}} </div>
-                                <div class="grey date">{{item.messages[item.messages.length-1].date}}</div>
+                                <div v-if="item.messages.length != 0" class="grey date">{{item.messages[item.messages.length-1].date}}</div>
                             </div>
-                            <div class="grey last-message"> {{item.messages[item.messages.length-1].text}} </div>
+                            <div v-if="item.messages.length != 0" class="grey last-message"> {{item.messages[item.messages.length-1].text}} </div>
                         </div>
                     </div>
                     <!-- fine contatto -->

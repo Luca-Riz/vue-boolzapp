@@ -248,7 +248,7 @@ const app = new Vue(
                     messages: [
                         {
                             date: '28/06/2021 10:32:53',
-                            text: 'Non ti preoccupare, anche queste cose servono, l\'importante è risolvere',
+                            text: 'Ciao',
                             status: 'received',
                             menuDel: false
                             }    
