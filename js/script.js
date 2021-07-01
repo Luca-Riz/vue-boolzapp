@@ -29,7 +29,7 @@ const app = new Vue(
                         text: 'Tutto fatto!',
                         status: 'received',
                         menuDel: false
-                        },
+                        }
                     ],
                 },
 
@@ -55,7 +55,7 @@ const app = new Vue(
                         text: 'Mi piacerebbe ma devo andare a fare la spesa.',
                         status: 'sent',
                         menuDel: false
-                        },
+                        }
                     ],
                 },
 
@@ -81,7 +81,7 @@ const app = new Vue(
                         text: 'Si, va ben',
                         status: 'sent',
                         menuDel: false
-                        },
+                        }
                     ],
                 },
 
@@ -143,7 +143,7 @@ const app = new Vue(
                         text: 'Si sta bene, quindi sono super contento',
                         status: 'received',
                         menuDel: false
-                        },
+                        }
                     ],
                 },
 
@@ -246,6 +246,12 @@ const app = new Vue(
                     avatar: '_7',
                     visible: true,
                     messages: [
+                        {
+                            date: '28/06/2021 10:32:53',
+                            text: 'Non ti preoccupare, anche queste cose servono, l\'importante è risolvere',
+                            status: 'received',
+                            menuDel: false
+                            }    
                     ],
                 },
             ],
@@ -311,6 +317,8 @@ const app = new Vue(
                 let smsHere = this.contacts[this.active].messages;
                 smsHere.splice(ind, 1);
             },
+
+
 
             //? funzione  per far comparire data e ora come voglio
             actualDate(){
