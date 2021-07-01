@@ -199,8 +199,17 @@ main.container header {
     border-bottom: 1px solid #b1b1b1;
 }
 
+.contatti .contact {
+    display: flex;
+    align-items: center;
+}
+
 .contatti .contact img {
     margin-left: 1.5rem;
+}
+
+.contatti .contact .textInContact {
+    width: calc(100% - 108px); /** 108 è l'immagine più i margin  */
 }
 
 .contatti .contact .name, .contatti .contact .grey {
@@ -209,6 +218,11 @@ main.container header {
 
 .contatti .contact .nameDate {
     display: flex;
+    justify-content: space-between;
+}
+
+.contatti .contact .nameDate .date, .contatti .contact .last-message {
+    font-size: 0.8rem;
 }
 
 /* fine contatti */

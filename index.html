@@ -78,9 +78,9 @@
                 <div class="contatti">
 
                     <!-- inizio contatto -->
-                    <div class="contact flex_align_start pointer" v-for="(item,i) in contacts" @click="activeContact(i)" :class="[(active == i) ? 'bgr_boolz_grey' : '', (contacts[i].visible == false) ? 'none' : '']">
+                    <div class="contact pointer" v-for="(item,i) in contacts" @click="activeContact(i)" :class="[(active == i) ? 'bgr_boolz_grey' : '', (contacts[i].visible == false) ? 'none' : '']">
                         <img :src="'img/avatar'+ item.avatar +'.jpg'" alt="#" class="avatar">
-                        <div>
+                        <div class="textInContact">
                             <div class="nameDate">
                                 <div class="name"> {{item.name}} </div>
                                 <div class="grey date">{{item.messages[item.messages.length-1].date}}</div>
