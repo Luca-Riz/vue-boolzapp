@@ -286,6 +286,10 @@ main.container header {
     margin-right: 10px;
 }
 
+.containerMessage .menu .delete-message:hover {
+    background-color: #b1b1b1;
+}
+
 .cln_right main .sent {
     justify-content: right;
 }
