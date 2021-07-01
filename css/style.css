@@ -71,7 +71,7 @@ body {
 
 .underline {text-decoration: underline;}
 
-.none {display: none;}
+.none {display: none !important;}
 .flex {display: flex !important;}
 
 /** fine common */
