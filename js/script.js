@@ -41,17 +41,20 @@ const app = new Vue(
                         {
                         date: '20/03/2020 16:30:00',
                         text: 'Ciao come stai?',
-                        status: 'sent'
+                        status: 'sent',
+                        menuDel: false
                         },
                         {
                         date: '20/03/2020 16:30:55',
                         text: 'Bene grazie! Stasera ci vediamo?',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         },
                         {
                         date: '20/03/2020 16:35:00',
                         text: 'Mi piacerebbe ma devo andare a fare la spesa.',
-                        status: 'sent'
+                        status: 'sent',
+                        menuDel: false
                         },
                     ],
                 },
@@ -64,17 +67,20 @@ const app = new Vue(
                         {
                         date: '20/04/2020 16:30:00',
                         text: 'Ciao omo, come xea?',
-                        status: 'sent'
+                        status: 'sent',
+                        menuDel: false
                         },
                         {
                         date: '20/04/2020 16:30:55',
                         text: 'Ben grassie! Stasera se vedemo?',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         },
                         {
                         date: '20/04/2020 16:35:00',
                         text: 'Si, va ben',
-                        status: 'sent'
+                        status: 'sent',
+                        menuDel: false
                         },
                     ],
                 },
@@ -87,47 +93,56 @@ const app = new Vue(
                         {
                         date: '21/06/2021 16:30:00',
                         text: 'Ciao Marchetto, come stai? Stiamo facendo vuejs con Boolean',
-                        status: 'sent'
+                        status: 'sent',
+                        menuDel: false
                         },
                         {
                         date: '21/06/2021 16:30:55',
                         text: 'Bomba Vue, poi mi dirai',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         },
                         {
                         date: '21/06/2021 16:35:00',
                         text: 'Cosa hai fatto oggi?',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         },
                         {
                         date: '21/06/2021 16:36:00',
                         text: 'Solo l\'introduzione, oggi pomeriggio studio slide e facciamo esercizi semplici',
-                        status: 'sent'
+                        status: 'sent',
+                        menuDel: false
                         },
                         {
                         date: '21/06/2021 16:37:00',
                         text: 'Ok, poi se hai bisogno chiedimi',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         },
                         {
                         date: '21/06/2021 16:38:00',
                         text: 'Grazie mille! Come vá col lavoro post Boolean? Non ti ho mai chiesto se ti piace! Com\'è l\'ambiente?!',
-                        status: 'sent'
+                        status: 'sent',
+                        menuDel: false
                         },
                         {
                         date: '21/06/2021 16:39:30',
                         text: 'Una figata, tutto super ok',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         },
                         {
                         date: '21/06/2021 16:39:40',
                         text: 'Lavoro una bomba, ambiente e colleghi una bomba',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         },
                         {                        
                         date: '21/06/2021 16:39:50',
                         text: 'Si sta bene, quindi sono super contento',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         },
                     ],
                 },
@@ -140,32 +155,38 @@ const app = new Vue(
                         {
                         date: '20/05/2021 16:30:00',
                         text: 'Ciao Luca',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         },
                         {
                         date: '20/05/2021 16:30:55',
                         text: 'nel css togli la riga 90  z-index: -1; /*? appena sopra il bgr (riga 16) */',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         },
                         {
                         date: '20/05/2021 16:35:00',
                         text: 'Pazzesco... Non sai quanto tempo ci ho perso... ',
-                        status: 'sent'
+                        status: 'sent',
+                        menuDel: false
                         },
                         {
                         date: '20/05/2021 16:35:30',
                         text: 'Grazie',
-                        status: 'sent'
+                        status: 'sent',
+                        menuDel: false
                         },
                         {
                         date: '20/05/2021 16:36:30',
                         text: 'Figurati!',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         },
                         {
                         date: '20/05/2021 16:37:30',
                         text: 'adesso l\'importante che funziona',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         },
                     ],
                 },
@@ -178,17 +199,20 @@ const app = new Vue(
                         {
                         date: '20/03/2021 12:30:00',
                         text: 'Com\'è andata stamattina coi bimbi?',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         },
                         {
                         date: '20/03/2021 12:30:55',
                         text: 'Bene dai! Mattia non voleva proprio entrare, ma con un cartone animato gli ho cambiato la giornata',
-                        status: 'sent'
+                        status: 'sent',
+                        menuDel: false
                         },
                         {
                         date: '20/03/2021 13:35:00',
                         text: 'Il solito viziatello',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         }
                     ],
                 },
@@ -200,17 +224,20 @@ const app = new Vue(
                         {
                         date: '28/06/2021 10:30:00',
                         text: 'Come va con l\'esercizio Luca?',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         },
                         {
                         date: '28/06/2021 10:31:00',
                         text: 'Speravo meglio, ieri ho fatto un paio di stupidaggini che mi hanno portato via ore, la più ridicola è stata "const app = new Vue", al posto di Vue avevo messo quello che suggerisce vs code... ore...',
-                        status: 'sent'
+                        status: 'sent',
+                        menuDel: false
                         },
                         {
                         date: '28/06/2021 10:32:53',
                         text: 'Non ti preoccupare, anche queste cose servono, l\'importante è risolvere',
-                        status: 'received'
+                        status: 'received',
+                        menuDel: false
                         }    
                     ],
                 },
@@ -240,6 +267,7 @@ const app = new Vue(
                         date: this.actualDate(),
                         text: testo,
                         status: 'sent',
+                        menuDel: false
                     });
                     // console.log(this.contacts[this.active].messages);  
     
@@ -270,13 +298,15 @@ const app = new Vue(
                 let smsHere = this.contacts[this.active].messages[ind].menuDel;
                 if(smsHere == false){
                     smsHere = true;
-                    console.log(smsHere);
+                    // console.log(smsHere);
                     
                 } else {
                     smsHere = false;
-                    console.log(smsHere);
+                    // console.log(smsHere);
                 }
                 this.contacts[this.active].messages[ind].menuDel = smsHere;
+                console.log(this.active);
+                console.log('ind' + ind);
             },
 
             deleteSms: function(ind){
@@ -299,6 +329,7 @@ const app = new Vue(
                     date: this.actualDate(), //richiamo funzione per data e ora
                     text: 'ok',
                     status: 'received',
+                    menuDel: false
                 });
             },
 
